@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d022f968-1778-4c28-ab73-83dd097d3b2c" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/my0722_detect_fraud.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.ipynb_checkpoints/Demo20180722-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/.ipynb_checkpoints/Demo20180722-checkpoint.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Demo20180722.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Demo20180722.ipynb" afterDir="false" />
@@ -39,13 +40,25 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="my0722_arima.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="my0722_arima.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/my0722_arima.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="69">
               <caret line="30" column="32" selection-start-line="30" selection-start-column="32" selection-end-line="30" selection-end-column="32" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="my0722_detect_fraud.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/my0722_detect_fraud.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="371">
+              <caret line="90" column="10" lean-forward="true" selection-start-line="90" selection-start-column="10" selection-end-line="90" selection-end-column="10" />
+              <folding>
+                <element signature="e#0#19#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -65,7 +78,11 @@
       <find>dfunc</find>
       <find>n_samples</find>
       <find>sess.graph</find>
+      <find>pandas</find>
     </findStrings>
+    <replaceStrings>
+      <replace>pd</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -79,6 +96,7 @@
         <option value="$PROJECT_DIR$/test/test_0117.py" />
         <option value="$PROJECT_DIR$/my0715_tensorboard.py" />
         <option value="$PROJECT_DIR$/my0722_arima.py" />
+        <option value="$PROJECT_DIR$/my0722_detect_fraud.py" />
       </list>
     </option>
   </component>
@@ -134,25 +152,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.my0722_arima">
-    <configuration name="Demo20180701" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="tibame_python_dl" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="D:\machine_learn\train_class\tibame_python_dl\Demo20180701_ANN.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
+  <component name="RunManager" selected="Python.my0722_detect_fraud">
     <configuration name="my0715_tensorboard" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="tibame_python_dl" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -184,6 +184,24 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/my0722_arima.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="my0722_detect_fraud" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="tibame_python_dl" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/my0722_detect_fraud.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -241,19 +259,19 @@
     </configuration>
     <list>
       <item itemvalue="Python.test_0701.py" />
-      <item itemvalue="Python.Demo20180701" />
       <item itemvalue="Python.test" />
       <item itemvalue="Python tests.py.test in D:/machine_learn/train_class/tibame_python_dl/test/test_0715.py" />
       <item itemvalue="Python.my0715_tensorboard" />
       <item itemvalue="Python.my0722_arima" />
+      <item itemvalue="Python.my0722_detect_fraud" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.my0722_detect_fraud" />
         <item itemvalue="Python.my0722_arima" />
         <item itemvalue="Python.my0715_tensorboard" />
         <item itemvalue="Python tests.py.test in D:/machine_learn/train_class/tibame_python_dl/test/test_0715.py" />
         <item itemvalue="Python.test" />
-        <item itemvalue="Python.Demo20180701" />
       </list>
     </recent_temporary>
   </component>
@@ -301,18 +319,17 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21601686" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21601686" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="7" visible="true" weight="0.5362947" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.27410617" />
       <window_info anchor="bottom" id="Python Console" order="7" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.13217768" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.37378114" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.37378114" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -333,11 +350,16 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="19" />
+      <option name="time" value="21" />
     </breakpoint-manager>
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="evaluateExpression">
+      <expression>
+        <expression-string>group.index</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
       <expression>
         <expression-string>history[-interval]</expression-string>
         <language-id>Python</language-id>
@@ -530,6 +552,16 @@
           <caret line="30" column="32" selection-start-line="30" selection-start-column="32" selection-end-line="30" selection-end-column="32" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/my0722_detect_fraud.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="371">
+          <caret line="90" column="10" lean-forward="true" selection-start-line="90" selection-start-column="10" selection-end-line="90" selection-end-column="10" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
           </folding>
         </state>
       </provider>
