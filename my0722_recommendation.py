@@ -34,7 +34,7 @@ def load_data():
     max_item_id += 1  # actual item_id starts from 1
     train_users = list(train_history.keys())
     # convert items as sparse matrix for each user
-    # spare matrix: corresponding items are 0
+    # sparse matrix: items which user liked are 1
     train_x = numpy.zeros((len(train_users), max_item_id), dtype=numpy.int32)
     for i, hist in enumerate(train_history.values()):
         mat = to_categorical(hist, max_item_id)

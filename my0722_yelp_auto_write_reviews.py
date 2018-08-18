@@ -17,14 +17,16 @@ chars = ['\n', ' ', '!', '"', '#', '$', '%', '&', "'", '(', ')', '*', ',', '-', 
 
 # Dictionary mapping unique characters to their index in `chars`
 char_indices = dict((char, chars.index(char)) for char in chars)
-maxlen = 60
-step = 1
 
+pre_trained_model = keras.utils.get_file(
+    'pre-trained.hdf5',
+    origin='https://github.com/Tony607/Yelp_review_generation/releases/download/V0.1/pre-trained.hdf5')
+maxlen = 60
 model = keras.models.Sequential()
 model.add(layers.LSTM(1024, input_shape=(maxlen, len(chars)), return_sequences=True))
 model.add(layers.LSTM(1024, input_shape=(maxlen, len(chars))))
 model.add(layers.Dense(len(chars), activation='softmax'))
-model.load_weights("../pre-trained.hdf5")
+model.load_weights(pre_trained_model)
 
 optimizer = keras.optimizers.Adam(lr=0.0002)
 model.compile(loss='categorical_crossentropy', optimizer=optimizer)
@@ -38,6 +40,8 @@ print('vocabulary length: ', len(chars))
 # temperature=0.5：文章生成得比較好，在結構和隨機性保持平衡的情況下，產生比較好的句子。
 def sample(preds, temperature=1.0):
     preds = np.asarray(preds).astype('float64')
+    vectfunc = np.vectorize(lambda p: p + (1e-10) if p == 0 else p)
+    preds = vectfunc(preds)
     preds = np.log(preds) / temperature
     exp_preds = np.exp(preds)
     preds = exp_preds / np.sum(exp_preds)
@@ -53,7 +57,7 @@ def random_reviews():
     print('Coming up with several reviews for you...')
 
     for temperature in [0.8]:
-        sys.stdout.write(generated_text)
+        # sys.stdout.write(generated_text)
 
         # generate 600 characters
         for i in range(600):
