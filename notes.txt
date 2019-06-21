@@ -12,4 +12,6 @@
   (5) 壓縮並重建 MNIST： Auto Encoder
   (6) 建立推薦系統： Auto Encoder
   (7) 偵測信用卡詐欺事件： Auto Encoder 
+4. Demo20180728.ipynb
+  (1) Time Series Analysis in Python
   
