@@ -1,0 +1,15 @@
+1. Demo20180715.ipynb: 
+  (1) 使用者流失分析： Keras MLP, ROC curve
+2. Demo20180721.ipynb
+  (1) 預測客戶是否流失： Keras MLP, ROC curve
+  (2) 撰寫網路爬蟲抓取圖片
+  (3) 股價預測： LSTM
+3. Demo20180722.ipynb
+  (1) 股價預測： ARIMA，LSTM
+  (2) 預測火鍋搜尋趨勢： LSTM
+  (3) 使用LSTM 讓電腦自動寫文章： LSTM, temperature
+  (4) Auto write Yelp reviews： LSTM
+  (5) 壓縮並重建 MNIST： Auto Encoder
+  (6) 建立推薦系統： Auto Encoder
+  (7) 偵測信用卡詐欺事件： Auto Encoder 
+  
